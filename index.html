@@ -1,0 +1,391 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+           crossorigin=""/>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+           integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+           crossorigin=""></script>
+        <script>
+            var language, debug, tiles;
+            function update_markers(mymap, markers) {
+                var marker_type;
+                for (marker_type in markers) {
+                    for (marker_i in markers[marker_type]["markers"]) {
+                        var marker = markers[marker_type]["markers"][marker_i];
+                        if (marker.tiles != tiles) {
+                            continue;
+                        }
+                        var visibility = undefined;
+
+                        var showcompleted = L.DomUtil.get("showcompleted"), showcompleted_selected;
+                        if (showcompleted) {
+                            showcompleted_selected = L.DomUtil.hasClass(showcompleted, "selected");
+                        }
+
+                        if (marker.completed && !showcompleted_selected) {
+                            if (marker._visibility == "visible") {
+                                visibility = "hidden";
+                            }
+                        } else {
+                            if (marker._visibility != markers[marker_type].visibility) {
+                                visibility = markers[marker_type].visibility;
+                            }
+                        }
+                        if (visibility) {
+                            if (visibility == "visible") {
+                                marker.marker.addTo(mymap);
+                            } else if (visibility == "hidden") {
+                                marker.marker.removeFrom(mymap);
+                            }
+                            marker._visibility = visibility;
+                        }
+                    }
+                }
+            }
+            function onload() {
+                var params = (new URL(document.location)).searchParams;
+                language = params.get('language');
+                if (!language) {
+                    language = 'nl';
+                }
+                debug = params.get('debug');
+                if (!debug) {
+                    debug = 0;
+                }
+                tiles = params.get('tiles');
+                if (!tiles) {
+                    tiles = 'main';
+                }
+
+                var mymap = L.map('mapid', {
+                    maxBounds: [
+                        [88, 180],
+                        [-75, -180],
+                    ],
+                }).setView([0, 0], 2);
+                L.tileLayer('tiles/' + tiles +'/{z}/{x}/{y}.png', {
+                    maxZoom: 4,
+                }).addTo(mymap);
+
+                var popup = L.popup();
+                if (debug) {
+                    mymap.on('click', function (e) {
+                        popup
+                            .setLatLng(e.latlng)
+                            .setContent(
+                                "{\"coords\": [" +
+                                e.latlng.lat.toFixed(2) +
+                                ", " +
+                                e.latlng.lng.toFixed(2) +
+                                "]},"
+                            )
+                            .openOn(mymap);
+                    });
+                }
+                fetch('markers.json').then(function(response) {
+                    response.json().then(function(markers) {
+                        initialize(mymap, markers);
+                    });
+                }); 
+            }
+            function initialize(mymap, markers) {
+                var completed = JSON.parse(localStorage.getItem("completed"));
+                if (!completed) completed = {};
+                for (marker_type in markers) {
+                    var icon = L.icon({iconUrl: 'icons/'+marker_type+'.png', iconSize: [32, 32]});
+                    // marker_type defauls
+                    markers[marker_type].visibility = "visible";
+                    for (marker_i in markers[marker_type]["markers"]) {
+                        var marker = markers[marker_type]["markers"][marker_i];
+                        // marker defaults
+                        marker._visibility = "visible";
+                        if (!marker.tiles) {
+                            marker.tiles = "main";
+                        }
+                        if (marker.tiles != tiles) {
+                            continue;
+                        }
+                        if (completed[marker_type]) {
+                            marker.completed = completed[marker_type].indexOf(marker_i) != -1;
+                        }
+
+                        marker.marker = L.marker(marker["coords"], {icon: icon}).addTo(mymap);
+
+                        var container = L.DomUtil.create('div');
+                        var title = L.DomUtil.create('h1', '', container);
+                        if (marker.title) {
+                            if (marker.title.constructor == Object) {
+                                if (language in marker.title) {
+                                    title.innerHTML = marker.title[language];
+                                } else {
+                                    title.innerHTML = marker_type;
+                                }
+                            } else {
+                                title.innerHTML = marker.title;
+                            }
+                        } else {
+                            title.innerHTML = marker_type;
+                            if (debug) {
+                                title.innerHTML += " " + markers[marker_type]["markers"][marker_i]["coords"];
+                            }
+                        }
+                        L.DomUtil.create('br', '', container);
+                        var description = L.DomUtil.create('div', '', container);
+                        if (marker.description) description.innerHTML = marker.description;
+                        L.DomUtil.create('br', '', container);
+                        var complete = L.DomUtil.create('a', '', container);
+                        complete.href = '#';
+                        complete.innerHTML = 'complete';
+                        complete.id = 'complete';
+                        if (marker.completed) {
+                            L.DomUtil.addClass(container, "completed")
+                        }
+                        L.DomEvent.disableClickPropagation(complete);
+                        L.DomEvent.on(complete, 'click', function() {
+                            var popup = this.marker.getPopup();
+                            var container = popup.getContent();
+                            var marker_i, marker_type, completed = {};
+                            this.completed = !L.DomUtil.hasClass(container, 'completed');
+                            if (this.completed) {
+                                L.DomUtil.addClass(container, 'completed');
+                            } else {
+                                L.DomUtil.removeClass(container, 'completed');
+                            }
+                            popup.update();
+
+
+                            // serialize completed
+                            for (marker_type in markers) {
+                                for (marker_i in markers[marker_type]["markers"]) {
+                                    if (markers[marker_type]["markers"][marker_i].completed) {
+                                        if (!completed[marker_type]) {
+                                            completed[marker_type] = [];
+                                        }
+                                        completed[marker_type].push(marker_i);
+                                    }
+                                }
+                            }
+                            localStorage.setItem("completed", JSON.stringify(completed));
+                            update_markers(mymap, markers);
+                        }, marker);
+                        marker.marker.bindPopup(container);
+                    }
+                };
+                update_markers(mymap, markers);
+                var legend = L.control({position: 'bottomright'});
+                legend.onAdd = function (map) {
+                    var container = L.DomUtil.create('div', 'info legend');
+
+                    var toggle = L.DomUtil.create('a', '', container);
+                    toggle.href = "#";
+                    toggle.innerHTML = 'Legend';
+
+                    var legenditems;
+                    L.DomEvent.disableClickPropagation(toggle);
+                    L.DomEvent.on(toggle, "click", L.DomEvent.stop);
+                    L.DomEvent.on(toggle, "click", function(ev) {
+                        if (legenditems.style.display === "none") {
+                          legenditems.style.display = "block";
+                        } else {
+                          legenditems.style.display = "none";
+                        }
+                    }, this);
+
+                    L.DomUtil.create('br', '', container);
+
+                    var showcompleted = L.DomUtil.create('a', '', container);
+                    showcompleted.href = '#';
+                    showcompleted.innerHTML = 'show completed';
+                    showcompleted.id = 'showcompleted';
+                    L.DomEvent.on(showcompleted, "click", L.DomEvent.stop);
+                    L.DomEvent.on(showcompleted, "click", function(ev) {
+                        if (L.DomUtil.hasClass(showcompleted, "selected")) {
+                            L.DomUtil.removeClass(showcompleted, "selected");
+                        } else {
+                            L.DomUtil.addClass(showcompleted, "selected");
+                        }
+                        update_markers(mymap, markers);
+                    });
+
+                    L.DomUtil.create('br', '', container);
+
+                    var lang, languages = ["nl", "en"];
+
+                    for (lang in languages) {
+                        lang = languages[lang];
+                        var langbutton = L.DomUtil.create('a', 'languages', container);
+                        langbutton.href = '?language=' + lang;
+                        langbutton.innerHTML = lang;
+                        if (lang == language) {
+                            L.DomUtil.addClass(langbutton, "selected");
+                        }
+                    }
+
+                    L.DomUtil.create('br', '', container);
+
+                    var selectall = L.DomUtil.create('a', 'selected', container);
+                    selectall.href = '#';
+                    selectall.innerHTML = 'all';
+                    selectall.id = 'selectall';
+
+                    L.DomUtil.create('br', '', container);
+
+                    legenditems = L.DomUtil.create('ul', 'cf', container);
+
+                    L.DomEvent.on(selectall, "click", L.DomEvent.stop);
+                    L.DomEvent.on(selectall, "click", function(ev) {
+                        L.DomUtil.addClass(L.DomUtil.get("selectall"), "selected");
+                        for (marker_type in markers) {
+                            L.DomUtil.removeClass(L.DomUtil.get(marker_type), "disabled");
+                            markers[marker_type].visibility = "visible";
+                            update_markers(mymap, markers);
+                        }
+                    }, this);
+
+                    legenditems.setAttribute("id", "legenditems");
+                    for (marker_type in markers) {
+                        var title;
+                        if (language in markers[marker_type]["title"]) {
+                            title = markers[marker_type]["title"][language];
+                        } else {
+                            title = marker_type;
+                        }
+                        li = L.DomUtil.create('li', '', legenditems);
+                        li.setAttribute("id", marker_type);
+                        li.innerHTML = L.Util.template(
+                            "<img src=\"icons/{marker_type}.png\">{title}", {
+                                "marker_type": marker_type,
+                                "title": title
+                            }
+                        );
+                        L.DomEvent.on(li, "click", L.DomEvent.stop);
+                        L.DomEvent.on(li, "click", function(ev) {
+                            var all_visible = true;
+                            L.DomUtil.removeClass(L.DomUtil.get("selectall"), "selected");
+                            for (marker_type in markers) {
+                                if (markers[marker_type].visibility != "visible") {
+                                    all_visible = false;
+                                    break;
+                                }
+                            }
+                            if (all_visible) {
+                                for (marker_type in markers) {
+                                    if (this.getAttribute("id") == marker_type) {
+                                        markers[marker_type].visibility = "visible";
+                                    } else {
+                                        markers[marker_type].visibility = "hidden";
+                                    }
+
+                                }
+                            } else {
+                                marker_type = markers[this.getAttribute("id")];
+                                if (marker_type.visibility == "visible") {
+                                    marker_type.visibility = "hidden";
+                                } else {
+                                    marker_type.visibility = "visible";
+                                }
+                            }
+                            for (marker_type in markers) {
+                                if (markers[marker_type].visibility == "visible") {
+                                    L.DomUtil.removeClass(L.DomUtil.get(marker_type), "disabled");
+                                } else {
+                                    L.DomUtil.addClass(L.DomUtil.get(marker_type), "disabled");
+                                }
+                            }
+                            update_markers(mymap, markers);
+                        });
+
+                    }
+                    return container;
+                };
+                legend.addTo(mymap);
+            }
+        </script>
+        <style>
+            .cf:before,
+            .cf:after {
+                content: " "; /* 1 */
+                display: table; /* 2 */
+            }
+            .cf:after {
+                    clear: both;
+            }
+            #mapid { height: 100%; }
+            .info {
+                padding: 6px 8px;
+                font: 14px/16px Arial, Helvetica, sans-serif;
+                background: white;
+                background: rgba(255,255,255,0.8);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                border-radius: 5px;
+            }
+            .legend {
+                line-height: 18px;
+                color: #555;
+                max-height: calc(100vh - 60px);
+            }
+            .legend ul {
+                padding: 0;
+                width: 355px;
+                list-style-type: none;
+                overflow: auto;
+                max-height: calc(100vh - 146px);
+            }
+            .legend li {
+                width: 170px;
+                float: left;
+            }
+            li.disabled {
+                filter: grayscale(100%);
+                text-decoration: line-through;
+            }
+            .legend img {
+                width: 32px;
+                height: 32px;
+            }
+            #forkme {
+                z-index: 1000;
+                right: 0;
+                position: absolute;
+
+            }
+            body {
+                margin:0;
+                padding:0
+            }
+            .selected {
+                text-decoration: none !important;
+            }
+            #selectall {
+                text-decoration: line-through;
+            }
+            #showcompleted {
+                text-decoration: line-through;
+            }
+            .completed #complete {
+                text-decoration: line-through;
+            }
+            .languages {
+                padding: 0px 10px 0px 0px;
+                text-decoration: line-through;
+            }
+            @media screen and (max-width: 375px) {
+                .legend li {
+                    width: 170px;
+                    float: none;
+                }
+                .legend ul {
+                    width: 170px;
+                }
+            }
+        </style>
+    </head>
+    <body onload="onload()">
+        <a class="github-fork-ribbon" href="https://github.com/meeuw/legocityundercovermap" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+        <div id="mapid"></div>
+    </body>
+</html>
