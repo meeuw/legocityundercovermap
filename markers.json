@@ -2,6 +2,7 @@
     "red-brick": {
         "title": {"en": "Red Brick", "nl": "Rode Steen"},
         "markers": [
+            {"coords": [70.79, -22.85], "title": "Oneindig dynamiet", "tiles": "miner_altercation"},
             {"coords": [-47.96, -93.80], "title": "Data scan upgrade - City Challenges"},
             {"coords": [-20.26, -86.43], "title": "Data scan upgrade - Character challenges.", "description": "Track to red brick is under the garbagecan."},
             {"coords": [20.61, -110.31], "title": "Data Scan Upgrade - Red Bricks", "description": "From the middle Bridge Support, break the blue barrel to build a jumping platform that will allow you to reach the stud wall to climb up to the platform above. Run around the support beam to find a line, carefully walk out on the line until you reach the middle"},
@@ -534,6 +535,7 @@
     "character-token": {
         "title": {"en": "Character Token", "nl": "Kostuum"},
         "markers": [
+            {"coords": [-41.77, 60.47], "title": "Spikey Don", "tiles": "miner_altercation"},
             {"coords": [-47.58, -65.03], "title": "Frank Honey (Police)", "description": "Super Build"},
             {"coords": [27.84, -63.62], "title": "Ellie Phillips (Police)"},
             {"coords": [-27.88, 44.42], "title": "Mayor Gleeson (Police)", "description": "locked underneath a cage in the northeast. To blast it open head down the walkway toward the train station. Here a cannon will shoot a Bullet Bill from the Mario series at you. Lure the bullet back to the cage and jump out of the way at the last second."},
@@ -863,6 +865,8 @@
     "vehicle-token": {
         "title": {"nl": "Voertuig"},
         "markers": [
+            {"coords": [73.12, 22.15], "title": "Steadfast", "tiles": "miner_altercation"},
+            {"coords": [-50.40, 121.46], "title": "Dumper", "tiles": "miner_altercation"},
             {"coords": [-58.44, 8.88], "title": "Bearer", "description": "Chase"},
             {"coords": [62.64, -114.94], "title": "Slicker"},
             {"coords": [72.43, -105.05], "title": "Torsion"},
