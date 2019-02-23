@@ -465,7 +465,7 @@
             {"coords": [75.16, -24.17], "title": {"nl": "Uptown-museum"}},
             {"coords": [80.86, -87.41], "title": {"nl": "Geheime basis"}},
             {"coords": [76.41, -82.16], "title": {"nl": "Barry Smids dojo"}},
-            {"coords": [80.66, -110.46], "title": {"nl": "Bluebell-mijn"}},
+            {"coords": [80.66, -110.46], "title": {"nl": "Bluebell-mijn"}, "description": "<a href=\"?tiles=miner_altercation\">miner_altercation</a>"},
             {"coords": [-51.72, 140.61], "title": {"nl": "Blackwells maanbasis"}},
             {"coords": [-48.57, 152.74], "title": {"nl": "Apollo-eiland-ruimtevaartcentrum"}},
             {"coords": [-65.85, -36.04], "title": {"nl": "Albatros-gevangenis"}},
