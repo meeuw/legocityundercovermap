@@ -3,7 +3,7 @@
 from PIL import Image
 import os
 
-for name, depth in (('main', 5), ('miner_altercation', 4)):
+for name, depth in (('main', 5), ('miner_altercation', 4), ('secret_base', 4)):
     dst = 'tiles/{}/'.format(name)
     full = Image.open(name + ".png")
 
