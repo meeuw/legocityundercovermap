@@ -2,6 +2,7 @@
     "red-brick": {
         "title": {"en": "Red Brick", "nl": "Rode Steen"},
         "markers": [
+            {"coords": [-74.04, -39.58], "title": "Noppen x8", "tiles": "secret_base"},
             {"coords": [70.79, -22.85], "title": "Oneindig dynamiet", "tiles": "miner_altercation"},
             {"coords": [-47.96, -93.80], "title": "Data scan upgrade - City Challenges"},
             {"coords": [-20.26, -86.43], "title": "Data scan upgrade - Character challenges.", "description": "Track to red brick is under the garbagecan."},
@@ -65,7 +66,8 @@
             {"coords": [29.99, -58.53]},
             {"coords": [58.86, 41.84]},
             {"coords": [11.35, 43.07]},
-            {"coords": [22.89, -14.39]}
+            {"coords": [22.89, -14.39]},
+            {"coords": [-43.96, -53.88]}
         ]
     },
     "cat": {
@@ -296,7 +298,7 @@
             {"coords": [62.64, -114.94], "title": {"nl": "Noodmat"}, "description": "10 000"},
             {"coords": [72.43, -105.05]},
             {"coords": [79.49, -89.40], "title": {"nl": "Voertuigbestelpunt"}, "description": "8 000"},
-            {"coords": [77.24, -100.48]},
+            {"coords": [77.24, -100.48], "title": {"nl": "Helikopterplatform"}, "description": "20 000"},
             {"coords": [79.77, -101.42], "title": {"nl": "Bluebell-boom"}, "description": "30 000"},
             {"coords": [-56.43, 153.01]},
             {"coords": [-56.45, 142.72]},
@@ -463,7 +465,7 @@
         "title": {"en": "Challenge Entrance", "nl": "Ingang Uitdaging"},
         "markers": [
             {"coords": [75.16, -24.17], "title": {"nl": "Uptown-museum"}},
-            {"coords": [80.86, -87.41], "title": {"nl": "Geheime basis"}},
+            {"coords": [80.86, -87.41], "title": {"nl": "Geheime basis"}, "description": "<a href=\"?tiles=secret_base\">secret_base</a>"},
             {"coords": [76.41, -82.16], "title": {"nl": "Barry Smids dojo"}},
             {"coords": [80.66, -110.46], "title": {"nl": "Bluebell-mijn"}, "description": "<a href=\"?tiles=miner_altercation\">miner_altercation</a>"},
             {"coords": [-51.72, 140.61], "title": {"nl": "Blackwells maanbasis"}},
@@ -534,6 +536,8 @@
     "character-token": {
         "title": {"en": "Character Token", "nl": "Kostuum"},
         "markers": [
+            {"coords": [-80.70, 65.04], "tiles": "secret_base", "title": {"nl": "Onderzeeboot Kapitein", "en": "Submarine Captain"}},
+            {"coords": [48.94, -24.01], "tiles": "secret_base", "title": "Henrik Kowalski (no map)"},
             {"coords": [-47.58, -65.03], "title": "Frank Honey (Police)", "description": "Super Build"},
             {"coords": [27.84, -63.62], "title": "Ellie Phillips (Police)"},
             {"coords": [-27.88, 44.42], "title": "Mayor Gleeson (Police)", "description": "locked underneath a cage in the northeast. To blast it open head down the walkway toward the train station. Here a cannon will shoot a Bullet Bill from the Mario series at you. Lure the bullet back to the cage and jump out of the way at the last second."},
@@ -618,7 +622,8 @@
             {"coords": [64.01, -121.18], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (a)"},
             {"coords": [68.82, -131.50], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (b)"},
             {"coords": [72.34, -131.47], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (c)"},
-            {"coords": [79.67, -103.23], "title": "Ben Moseley (Miner)"},
+            {"coords": [78.49, -103.45], "title": "Ben Moseley (Miner)", "description": "fishing rod"},
+            {"coords": [79.67, -103.23], "title": "Ben Moseley (Miner)", "description": "wake up bear using fish, color the tent"},
             {"coords": [-49.26, 116.01], "title": "Brantford Cubbery (Astronaut)"},
             {"coords": [-42.35, 139.73], "title": "Classic Alien (Astronaut)"},
             {"coords": [-34.89, 47.96], "title": "Drew Calhoun (Astronaut)", "description": "Head to the dock that has the Alien's box and use your jetpack to reach the top of a sign to the right."},
@@ -692,7 +697,7 @@
             {"coords": [5.92, -100.99], "title": "Louie Mitchell (Civilian)"},
             {"coords": [69.91, -20.36], "title": "Paul Wimpenny (Civilian)"},
             {"coords": [-43.20, -10.47], "title": "Natalia Kowalski (Civilian)", "description": "climb to the top of the hospital and break down the boarded-up door"},
-            {"coords": [77.71, -100.71], "title": "Karate Champ (Civilian)", "description": "pull two antenas on the roof."},
+            {"coords": [77.71, -100.71], "title": {"en": "Karate Champ (Civilian)", "nl": "Karatekampioen (Burger)"}, "description": "pull two antenas on the roof."},
             {"coords": [-11.18, -87.53], "title": "Violet de Burgh (Civilian)", "description": "color red three boxes with fruits (c)"},
             {"coords": [3.25, -87.19], "title": "Violet de Burgh (Civilian)", "description": "color red three boxes with fruits"},
             {"coords": [2.77, -97.82], "title": "Violet de Burgh (Civilian)", "description": "color red three boxes with fruits (a)."},
@@ -716,7 +721,7 @@
             {"coords": [59.27, 38.14], "title": "Hula Dancer (Special 1)", "description": "paint the flowers (yellow, red, pink, blue)"},
             {"coords": [30.11, -15.24], "title": "Cheerleader (Special 1)"},
             {"coords": [65.33, -12.46], "title": "Skater (Special 1)"},
-            {"coords": [80.16, -103.58], "title": "Forestman (Special 1)", "description": "you'll get there from above the train tunnel, just don't forget to get up the tree after finishing the build bluebell tree."},
+            {"coords": [79.77, -101.42], "title": "Forestman (Special 1)", "description": "you'll get there from above the train tunnel, just don't forget to get up the tree after finishing the build bluebell tree (super build)."},
             {"coords": [37.71, -18.80], "title": "Spartan Warrior (Special 1)", "description": "use a car to jump and grab this token in the air."},
             {"coords": [32.77, -64.06], "title": "Explorer (Special 1)", "description": "destroy and rebuild the benches into binoculars."},
             {"coords": [51.34, 51.83], "title": "Surfer (Special 1)"},
@@ -860,6 +865,8 @@
     "vehicle-token": {
         "title": {"nl": "Voertuig"},
         "markers": [
+            {"coords": [61.86, 89.12], "title": "Rex's brute", "tiles": "secret_base"},
+
             {"coords": [73.12, 22.15], "title": "Steadfast", "tiles": "miner_altercation"},
             {"coords": [-50.40, 121.46], "title": "Dumper", "tiles": "miner_altercation"},
             {"coords": [-58.44, 8.88], "title": "Bearer", "description": "Chase"},
@@ -939,7 +946,8 @@
             {"coords": [-51.72, 151.33], "title": "UFO"},
             {"coords": [-66.79, -39.38]},
             {"coords": [-47.42, -95.03], "title": "Responder"},
-            {"coords": [-5.79, -89.03], "title": "Hera"}
+            {"coords": [-5.79, -89.03], "title": "Hera"},
+            {"coords": [46.44, 57.30], "tiles": "secret_base", "title": "Jupiter"}
         ]
     },
     "ferry": {
@@ -971,6 +979,18 @@
     "police-shield-fragment": {
         "title": {"en": "Police Shield Fragment", "nl": "Politieschildfragment"},
         "markers": [
+            {"coords": [65.07, -137.11], "tiles": "secret_base", "title": "rex fury crate (1/3)"},
+            {"coords": [48.94, -24.01], "tiles": "secret_base", "title": "rex fury crate (2/3) (no map)"},
+            {"coords": [48.94, -24.01], "tiles": "secret_base", "title": "rex fury crate (3/3) (no map)"},
+            {"coords": [-78.29, -72.45], "tiles": "secret_base", "title": "locker"},
+            {"coords": [-73.38, -55.31], "tiles": "secret_base", "title": "locker"},
+            {"coords": [-63.71, -15.59], "tiles": "secret_base", "title": "locker"},
+            {"coords": [-79.97, -26.84], "tiles": "secret_base", "title": "locker"},
+            {"coords": [-73.61, 59.77], "tiles": "secret_base", "title": "locker"},
+            {"coords": [-73.48, -35.10], "tiles": "secret_base", "title": "flowers"},
+            {"coords": [-77.62, -32.99], "tiles": "secret_base", "title": "flowers"},
+            {"coords": [-81.26, -43.19], "tiles": "secret_base", "title": "flowers"},
+            {"coords": [-73.71, 62.93], "tiles": "secret_base", "title": "flowers"},
             {"coords": [62.02, 56.60]}
         ]
     }
