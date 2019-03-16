@@ -67,8 +67,7 @@
             {"coords": [29.99, -58.53]},
             {"coords": [58.86, 41.84]},
             {"coords": [11.35, 43.07]},
-            {"coords": [22.89, -14.39]},
-            {"coords": [-43.96, -53.88]}
+            {"coords": [22.89, -14.39]}
         ]
     },
     "cat": {
@@ -254,6 +253,7 @@
     "district-conquered": {
         "title": {"en": "District Conquered", "nl": "Vlag"},
         "markers": [
+            {"coords": [-43.96, -53.88]},
             {"coords": [-41.84, -8.54]},
             {"coords": [-31.92, 41.61]},
             {"coords": [-60.62, 14.50]},
@@ -559,7 +559,7 @@
             {"coords": [77.71, -100.71], "title": "Ranger Lewis (Police)", "description": "get into building via skylight"},
             {"coords": [-27.55, -76.80], "title": "Detective (Police)", "description": "follow the tracks."},
             {"coords": [-5.88, -99.94], "title": "Avery Cruise (Police)", "description": "above the chimney"},
-            {"coords": [-46.01, -64.16], "title": "Ted Baxter (Police)"},
+            {"coords": [-47.69, -52.73], "title": "Ted Baxter (Police)"},
             {"coords": [-44.09, -91.48], "title": "Shaky Harry (Police)", "description": "teleport here"},
             {"coords": [-45.15, -89.64], "title": "Shaky Harry (Police)", "description": "teleport here from the roof of the building on the north"},
             {"coords": [39.41, 39.12], "title": "Blubs (Police)", "description": "smash the rock near the cave."},
@@ -636,8 +636,8 @@
             {"coords": [-1.54, -94.04], "title": "Henrik Kowalski (Astronaut)"},
             {"coords": [-34.75, 49.11], "title": "Cal Wainwright (Astronaut)", "description": "Hack through the boarded door on the docks"},
             {"coords": [65.42, -113.02], "title": "Farm Worker Bill (Farmer)"},
-            {"coords": [-47.42, -65.36], "title": "Troublemaker Phil (Farmer)", "description": "you need to color three trees near building with green paint."},
-            {"coords": [-45.66, -65.72], "title": "Troublemaker Phil (Farmer)", "description": "you need to color three trees near building with green paint. (a)"},
+            {"coords": [-47.42, -65.36], "title": {"en": "Troublemaker Phil (Farmer)", "nl": "Herrieschopper Flip (Boer)"}, "description": "you need to color three trees near building with green paint."},
+            {"coords": [-45.66, -65.72], "title": {"en": "Troublemaker Phil (Farmer)", "nl": "Herrieschopper Flip (Boer)"}, "description": "you need to color three trees near building with green paint. (a)"},
             {"coords": [70.85, -116.36], "title": {"en": "Rooster (Farmer)", "nl": "Boer Haan"}, "description": "under the bridge"},
             {"coords": [40.97, 44.45], "title": "Troublemaker Tom (Farmer)", "description": "paint brown three palm trees"},
             {"coords": [62.59, 44.74], "title": "Troublemaker Tom (Farmer)", "description": "paint brown three palm trees (a)"},
@@ -693,7 +693,7 @@
             {"coords": [75.35, -82.89], "title": "Trouserless Barry (Civilian)", "description": "go around dojo and water the plant there."},
             {"coords": [-8.80, -81.43], "title": "Samson Crow (Civilian)", "description": "color yellow three crates with bananas. Paint is in the one of the containers."},
             {"coords": [-2.64, -82.97], "title": "Samson Crow (Civilian)", "description": "color yellow three crates with bananas. Paint is in the one of the containers."},
-            {"coords": [-43.90, -76.19], "title": "George Fartarbensonbury (Civilian)", "description": "paint red furnitures in the shop."},
+            {"coords": [-45.71, -85.77], "title": {"en": "George Fartarbensonbury (Civilian)", "nl": "Sjors van der Janssenmans (Burger)"}, "description": "paint red furnitures in the shop."},
             {"coords": [74.76, -15.40], "title": "Kevin Jacobs (Civilian)", "description": "in the shop with arcade machines go to the left wall."},
             {"coords": [21.50, -14.57], "title": "Ste Bate (Civilian)"},
             {"coords": [75.53, -18.21], "title": "Mike Northeast (Civilian)", "description": "on the roof, get around the tower, but don't go higher."},
@@ -705,7 +705,7 @@
             {"coords": [3.25, -87.19], "title": "Violet de Burgh (Civilian)", "description": "color red three boxes with fruits"},
             {"coords": [2.77, -97.82], "title": "Violet de Burgh (Civilian)", "description": "color red three boxes with fruits (a)."},
             {"coords": [-7.62, -100.38], "title": "Violet de Burgh (Civilian)", "description": "color red three boxes with fruits (b)."},
-            {"coords": [-45.72, -71.78], "title": "Dave Something (Civilian)", "description": "teleport here from the teleporter above the entrance into Security Bank building (a)"},
+            {"coords": [-45.72, -71.78], "title": {"en": "Dave Something (Civilian)", "nl": "Henk Nogwat (Burger)"}, "description": "teleport here from the teleporter above the entrance into Security Bank building (a)"},
             {"coords": [52.80, 48.27], "title": "Beach Dude (Civilian)", "description": "build three sandcastles at the beach"},
             {"coords": [18.02, -85.39], "title": "Sarah Horner (Civilian)"},
             {"coords": [67.37, 14.00], "title": "Alexandra Greenwood (Civilian)"},
