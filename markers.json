@@ -506,6 +506,7 @@
     "fire-extinguished": {
         "title": {"en": "Fire Extinguished", "nl": "Barbecue"},
         "markers": [
+            {"coords": [-41.90, -86.92]},
             {"coords": [-25.49, -8.98]},
             {"coords": [-29.97, 36.86]},
             {"coords": [-63.58, 2.55]},
@@ -571,7 +572,7 @@
             {"coords": [41.51, -21.56], "title": "Pat Patterson (Police)", "description": "paint yellow L letter above the entrance to hotel."},
             {"coords": [20.71, -112.32], "title": "DaMumbo (Police)"},
             {"coords": [-43.25, 35.16], "title": "Doorlock Holmes (Police)", "description": "Use the green numbers on the map above to find four silver phone booths. Color each one red."},
-            {"coords": [-51.48, -96.09], "title": "Security Guard (Police)"},
+            {"coords": [-51.48, -96.09], "title": {"en": "Security Guard (Police)", "nl": "Bewaker (Politie)"}},
             {"coords": [74.04, 1.33], "title": "Officer Park (Police)"},
             {"coords": [12.81, -93.52], "title": "Clown Robber Max (Robber)"},
             {"coords": [-20.99, 40.26], "title": "Forrest Blackwell Tuxedo", "description": "Get on the white building."},
