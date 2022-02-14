@@ -333,8 +333,8 @@
             {"coords": [3.43, -10.02], "title": {"nl": "Bogen der rustgevendheid"}, "description": "30 000"},
             {"coords": [9.85, 55.03]},
             {"coords": [36.02, -11.06], "title": {"nl": "Voertuigbestelpunt"}, "description": "8 000"},
-            {"coords": [25.01, -66.17], "title": {"nl": "Veerboot"}, "description": "15 000"}
-            {"coords": [69.23, 62.96], "title": "Bluffbeard's Lighthouse", "description": "50 000"},
+            {"coords": [25.01, -66.17], "title": {"nl": "Veerboot"}, "description": "15 000"},
+            {"coords": [69.23, 62.96], "title": "Bluffbeard's Lighthouse", "description": "50 000"}
         ]
     },
     "super-brick": {
