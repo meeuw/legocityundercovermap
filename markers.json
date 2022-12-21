@@ -94,6 +94,7 @@
     "boulder": {
         "title": {"en": "Boulder", "nl": "Superrotsblok"},
         "markers": [
+            {"coords": [-4.74, -3.17]},
             {"coords": [-48.57, -13.28]},
             {"coords": [-56.48, 15.92]},
             {"coords": [73.48, 3.79]},
