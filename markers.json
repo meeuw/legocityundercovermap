@@ -340,7 +340,7 @@
             {"coords": [9.85, 55.03], "title": {"en": "Stunt Ramp", "nl": "Stuntschans"}, "description": "10 000"},
             {"coords": [36.02, -11.06], "title": {"en": "Call-in Point", "nl": "Voertuigbestelpunt"}, "description": "8 000"},
             {"coords": [25.01, -66.17], "title": {"en": "Ferry", "nl": "Veerboot"}, "description": "15 000"},
-            {"coords": [69.23, 62.96], "title": {"en": "Bluffbeard's Lighthouse", "nl": ""}, "description": "50 000"}
+            {"coords": [69.23, 62.96], "title": {"en": "Bluffbeard's Lighthouse", "nl": "Vuurtoren van Bluffbeard"}, "description": "50 000"}
         ]
     },
     "super-brick": {
