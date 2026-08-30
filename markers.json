@@ -493,8 +493,8 @@
         "title": {"en": "Helicopter Platform", "nl": "Helikopterplatform"},
         "markers": [
             {"coords": [-47.51, -94.67], "description:": "Unlocks the Responder."},
-            {"coords": [27.92, 55.72], "description:": ""},
-            {"coords": [34.43, -16.34], "description:": ""},
+            {"coords": [27.92, 55.72]},
+            {"coords": [34.43, -16.34]},
             {"coords": [77.24, -100.48], "description:": "Unlocks the Skybringer."},
             {"coords": [76.07, 10.33], "description": "Unlocks the Camel."},
             {"coords": [-5.79, -89.03], "description": "Unlocks the Hera."},
