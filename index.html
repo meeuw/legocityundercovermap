@@ -60,7 +60,7 @@
                 }
                 tiles = params.get('tiles');
                 if (!tiles) {
-                    tiles = 'main';
+                    tiles = 'hires-main';
                 }
 
                 var mymap = L.map('mapid', {
@@ -70,7 +70,7 @@
                     ],
                 }).setView([0, 0], 2);
                 L.tileLayer('tiles/' + tiles +'/{z}/{x}/{y}.png', {
-                    maxZoom: 4,
+                    maxZoom: 5,
                 }).addTo(mymap);
 
                 var popup = L.popup();
@@ -106,7 +106,7 @@
                         // marker defaults
                         marker._visibility = "visible";
                         if (!marker.tiles) {
-                            marker.tiles = "main";
+                            marker.tiles = "hires-main";
                         }
                         if (marker.tiles != tiles) {
                             continue;
