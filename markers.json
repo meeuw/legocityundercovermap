@@ -320,7 +320,7 @@
             {"coords": [-23.32, -89.82], "title": {"en": "Crash mat", "nl": "Noodmat"}, "description": "10 000"},
             {"coords": [-22.72, -86.38], "title": {"en": "House", "nl": "Huis op de heuvel", "description": "30 000"}},
             {"coords": [-18.52, -89.24], "title": {"en": "Call-in Point", "nl": "Voertuigbestelpunt"}, "description": "8 000"},
-            {"coords": [-15.03, -97.73], "title": {"en": "Sky glide", "nl": ""}, "description": "12 000"},
+            {"coords": [-15.03, -97.73], "title": {"en": "Sky glide", "nl": "Kabelbaan"}, "description": "12 000"},
             {"coords": [-13.71, -87.58], "title": {"en": "Stunt Ramp", "nl": "Stuntschans"}, "description": "10 000"},
             {"coords": [-5.79, -89.03], "title": {"en": "Helipad", "nl": "Helikopterplatform"}, "description": "20 000"},
             {"coords": [10.79, -92.77], "title": {"en": "Call-in Point", "nl": "Voertuigbestelpunt"}, "description": "8 000"},
