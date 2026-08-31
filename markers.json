@@ -311,7 +311,7 @@
             {"coords": [-56.45, 142.72],"title": {"en": "Loop de Loop", "nl": "Looping"}, "description": "30 000"},
             {"coords": [-51.55, 150.80], "title": {"en": "Helipad", "nl": "Helikopterplatform"}, "description": "20 000"},
             {"coords": [-56.45, 142.72], "title": {"en": "The Spinning Shuttle Program", "nl": ""}, "description": "50 000"},
-            {"coords": [-42.22, 139.73], "title": {"en": "Super Satellite", "nl": ""}, "description": "50 000"},
+            {"coords": [-42.22, 139.73], "title": {"en": "Super Satellite", "nl": "Super Satelliet"}, "description": "50 000"},
             {"coords": [-46.31, 133.67], "title": {"en": "Call-in Point", "nl": "Voertuigbestelpunt"}, "description": "8 000"},
             {"coords": [-67.04, -39.29], "title": {"en": "Helipad", "nl": "Helikopterplatform"}, "description": "20 000"},
             {"coords": [-47.42, -95.03], "title": {"en": "Helipad", "nl": "Helikopterplatform"}, "description": "20 000"},
