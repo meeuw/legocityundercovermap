@@ -15,3 +15,8 @@ All markers are defined in markers.json. To find the coordinates you can add ?de
 This map is created using the open source LeafletJS library (many thanks!), I've created the tiles by screenshotting the map on a Nintendo Switch and shared the pictures on Facebook, removed the HUD using Imagemagick and glued them back together using GIMP. This way I've created a baselayer which I've aligned to the top left and cropped at 4096x4096 pixels. This image was cropped and scaled to tiles using crop.png.
 
 The completion data is stored as localeStorage in your browser, as the markers are still being updated the completion data might get garbled. Please make sure you've forked the map to make sure your completion data will not be corrupted.
+
+Credits
+=======
+
+@Zarf-42 - Provided high resolution maps by tracing the maps to SVG
