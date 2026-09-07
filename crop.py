@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from PIL import Image
+Image.MAX_IMAGE_PIXELS = 268435456
 import os
 
 for name, depth in (('main', 7), ('miner_altercation', 4), ('secret_base', 4), ('dojo_temple', 4), ('roof_tops', 4)):
