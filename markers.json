@@ -2,9 +2,9 @@
     "red-brick": {
         "title": {"en": "Red Brick", "nl": "Rode Steen"},
         "markers": [
-            {"coords": [-53.1, 87.29], "title": "", "tiles": "secret_base", "description": "put the blocks (from left to right) to: pickaxe/oilcan/stethoscope/drill"},
-            {"coords": [-74.04, -39.58], "title": {"en": "Studs x8", "nl": "Noppen x8"}, "description": "Astronaut, Rex Fury<br />Open the orange-handled box, revealing an Astro Crate. Activate the crate to create a switch, disable the laser beams.", "tiles": "secret_base"},
-            {"coords": [70.79, -22.85], "title": {"en": "Unlimited Dynamite", "nl": "Oneindig dynamiet"}, "description": "Farmer<br />In the last area, just before the end: Use a blue jump pad to hop to a ledge above the cabin containing Stinky Fletcher's recording. To the left is a wooden platform with a Chicken Glide activity. Use this to traverse the canyon. On the far side is a section resembling a Donkey Kong arcade level. The red brick is at the top.", "tiles": "miner_altercation"},
+            {"coords": [-53.10, 87.29], "tiles": "secret_base", "title": "", "description": "put the blocks (from left to right) to: pickaxe/oilcan/stethoscope/drill"},
+            {"coords": [-74.04, -39.58], "tiles": "secret_base", "title": {"en": "Studs x8", "nl": "Noppen x8"}, "description": "Astronaut, Rex Fury<br />Open the orange-handled box, revealing an Astro Crate. Activate the crate to create a switch, disable the laser beams."},
+            {"coords": [70.79, -22.85], "tiles": "miner_altercation", "title": {"en": "Unlimited Dynamite", "nl": "Oneindig dynamiet"}, "description": "Farmer<br />In the last area, just before the end: Use a blue jump pad to hop to a ledge above the cabin containing Stinky Fletcher's recording. To the left is a wooden platform with a Chicken Glide activity. Use this to traverse the canyon. On the far side is a section resembling a Donkey Kong arcade level. The red brick is at the top."},
             {"coords": [-60.35, -42.67], "title": "Data Scan Upgrade - City Challenges", "description": "Robber<br />On the second level of the police station, in a jail cell that needs a crowbar to open.<br /><br />Allows the Data Scanner to show locations for Disguise Booths, Free Runs, Super Builds, Time Trials, and Train Stations."},
             {"coords": [-43.22, -36.67], "title": "Data Scan Upgrade - Character Challenges", "description": "No requirements<br />Smash the green garbage can, revealing a Detective Point. Follow it to a pile of leaves.<br /><br />Allows the Data Scanner to show Character Challenges, which are spots such as this Detective Point, Drill Thrills, Pigs, ATMs, etc."},
             {"coords": [-16.12, -55.69], "title": "Data Scan Upgrade - Red Bricks", "description": "No requirements<br />At the eastern pillar of the southern bridge support, break a blue barrel to build a jumping platform. Use it to reach a stud wall to climb up to the platform above. Run around the support beam to find a high-wire line. Carefully walk out on the line until you reach the middle.<br /><br />Allows the Data Scanner to show the locations of other Red Bricks."},
@@ -27,8 +27,8 @@
             {"coords": [-65.65, 156.11], "title": "Super Ray Gun", "description": "No requirements<br />Take a boat around to the back of Apollo Island. You'll find a smaller island with a missile silo. Trigger all the switches to open it, then jump down into the hole.<br /><br />Increases the ray gun's damage."},
             {"coords": [-73.13, 4.31], "title": "Police Siren Hat", "description": "Robber, Astronaut<br />From the beach, teleport into the prison yard and head over to the tall guard tower. Here, you'll need to pry open a locked door."},
             {"coords": [-11.73, -18.61], "title": "Wii U only: Mario Hat", "description": "Astronaut, Fireman<br />On the island, climb the tall flag pole then slide over to the base of the statue. Slowly work your way around to the Teleport pad, traveling up to the top of the statue. Put out the fire then slide down from the torch top"}
-       ]
-   },
+        ]
+    },
     "alien": {
         "title": {"en": "Alien", "nl": "Marsmannetje"},
         "markers": [
@@ -49,8 +49,8 @@
             {"coords": [-30.26, 66.35], "title": "Capture Alien (Fresco)", "description": "Farmer (or Jetpack)<br />Grow a nearby plant to get onto the awnings, then head left to a blue pipe (or use the Astronaut's jetpack). Climb up, then head left. Vault over three walls to find the Astro Crate."},
             {"coords": [-10.37, 13.82], "title": "Capture Alien (Bright Lights Plaza)", "description": "Jetpack<br />Inside the gym. Jetpack from the Bus Stop south of the Toy Store to the awning that goes around the Toy Store. Head left and circle around to the back of the building. After the tightrope, continue north. You'll be behind a railing with lights on it. At the north end of this railing is a Jetpack Activity. Follow it to land on one of the awnings of the Theater. Circle around to the east side of the building, using tightropes and vaulting poles, until it bends south. Use the teleporter pad to get into the gym. Once the alien is escaping, use the teleporter pad again to get back out."},
             {"coords": [-36.79, 26.67], "title": "Capture Alien (Pagoda)", "description": "No requirements<br />Climb up the blue pipes next to Aiden's. Once on the roof, go across the bridge."}
-       ]
-   },
+        ]
+    },
     "silver-statue": {
         "title": {"en": "Silver Statue", "nl": "Zilver Standbeeld"},
         "markers": [
@@ -71,8 +71,8 @@
             {"coords": [-14.25, 19.94], "title": "Silver Statue (Bright Lights Plaza)", "description": "No requirements<br />Use the Detective Point to find a key."},
             {"coords": [-29.35, 18.19], "title": "Silver Statue (Pagoda)", "description": "No requirements<br />"},
             {"coords": [-56.36, 16.14], "title": "Silver Statue (Heritage Bridge)", "description": "No requirements<br />Smash the left payphone in front of this tower to build a jumping platform. Grab the handles to climb up."}
-       ]
-   },
+        ]
+    },
     "cat": {
         "title": {"en": "Cat", "nl": "Kat"},
         "markers": [
@@ -93,8 +93,8 @@
             {"coords": [-27.19, 75.47], "title": "Rescue Cat (Fresco)", "description": "Farmer, Astronaut<br />These buildings straddle the Fresco Canal. At the southwest corner of the western building is a plant pot. Grow the plant and climb it. Hop onto the porch, then shimmy around the corner. Continue along this ledge and get onto the bridge between the two buildings. Follow the bridge, then go right to a Teleporter Pad. Use it to teleport to the roof of the western building. Follow the blue studs until you come to a gap with 3 jumping platforms. From here, go right to the blue studs that follow the roof of the bridge between the buildings. Follow it to the end, then get on the blue studs on the roof of the east building. Go right past the Chicken Glide point and find the cat near the end of the roof."},
             {"coords": [-36.50, 21.41], "title": "Rescue Cat (Pagoda)", "description": "Astronaut<br />Climb the Chan's Limo sign. This route follows the first part of the Free Run that also starts at the base of the sign. Once you slide down the rope and cross the street, climb the ladder in front of you and go right to a teleport pad. Use it to get to the roof; the cat is to your left."},
             {"coords": [50.83, 40.61], "title": "Rescue Cat (Airport)", "description": "Jetpack<br />Use the jetpack to get onto either of the awnings over the entrance doors to the terminal (look for the ATM). From there, hop onto the roof of the terminal and slide under the signs as needed to proceed right. Climb the blue pole to get to the top of the right sign, then use the Jetpack activities to get across to the left sign. The cat is perched inside the 'C' in the 'LC AIRPORT' sign."}
-       ]
-   },
+        ]
+    },
     "boulder": {
         "title": {"en": "Boulder", "nl": "Superrotsblok"},
         "markers": [
@@ -121,7 +121,7 @@
             {"coords": [35.19, 8.02], "title": "Boulder (Crescent Park)", "description": "On the northern beach, hop over the wooden fence. It's beneath a group of normal tan boulders."},
             {"coords": [-57.06, 61.06], "title": "Boulder (Kings Court)", "description": "In the park, east of the fountain. Hidden beneath a group of normal grey boulders."}
         ]
-   },
+    },
     "drill-thrill": {
         "title": {"en": "Drill Thrill", "nl": "Booruitdaging"},
         "markers": [
@@ -142,11 +142,10 @@
             {"coords": [-0.44, 11.11], "title": "Drill Thrill (Bright Lights Plaza)", "description": "Astronaut<br />Due west from the middle of the roundabout is a building with loose concrete at the entrance. Use it to get onto the awning, use the tightrope to the right to get across, then head left to the climbable wall on the side of Quentins. Climb up, follow the awning north, use the teleport pad, proceed to the left to a jumping platform. You'll land on another awning. Go right and climb up a blue pole. The electrical panel is to the right on this roof."},
             {"coords": [-37.76, 21.33], "title": "Drill Thrill (Pagoda)", "description": "Astronaut<br />Climb the Chan's Limo sign. This route follows the first part of the Free Run that also starts at the base of the sign. Once you slide down the rope and cross the street, climb the ladder in front of you and go right to a teleport pad. Use it to get to the roof, where this Drill Thrill is. "},
             {"coords": [48.15, 43.07], "title": "Drill Thrill (Lego City Airport)", "description": "On the roof of the southern side of the terminal."}
-       ]
-   },
+        ]
+    },
     "water-flowers": {
-        "title": {
-            "en": "Flowers", "nl": "Plantjes Water Geven"},
+        "title": {"en": "Flowers", "nl": "Plantjes Water Geven"},
         "markers": [
             {"coords": [-8.50, -16.98], "title": "Water Flowers (Lady Liberty Island)", "description": "Rex Fury, Astronaut<br />Rex Fury and the Astronaut disguise must be unlocked in order to get to Lady Liberty Island. The flowers are on a sidewalk on the west side of the island, just before the steps leading up to the Statue."},
             {"coords": [-56.07, 40.95], "title": "Water Flowers (Festival Square)", "description": "No requirements<br />Find the crosswalk east of the RFA building. Continue southeast until you see a narrow gap between buildings. You'll see a blue entrace with a red carpet and bollards to the north, and the flowers to the south."},
@@ -168,8 +167,8 @@
             {"coords": [-37.17, 23.24], "title": "Water Flowers (Pagoda)", "description": "No requirements<br />Climb the Chan's Limo sign. This route follows the first part of the Free Run that also starts at the base of the sign. Once you slide down the rope and cross the street, climb the ladder in front of you go to the left. Vault over the short wall, then jump across the gap (marked with collectable studs). Go north and circle around the building heading left. Climb up the ladder, then the climbing wall. The flowers are to your right."},
             {"coords": [-4.83, 19.02], "title": "Water Flowers (Bright Lights Plaza)", "description": "Requires Chapter 10 - Back on the Case to be completed and the Helipad in Bright Lights Plaza to be built.<br />On the top of the round building with the 'Wheatleys Bakery' and 'Deli & Cafe' signs circling around. On the northwest side of the building is a control panel that can be used to go to the top. Go right, then out the door and up the stairs. The flowers are in front of a long planter box."},
             {"coords": [61.04, -42.66], "title": "Water Flowers (Bluebell National Park)", "description": "No requirements<br />On the patio of a log cabin just north of the main road."}
-       ]
-   },
+        ]
+    },
     "pig": {
         "title": {"en": "Pig", "nl": "Boer Big"},
         "markers": [
@@ -195,8 +194,8 @@
             {"coords": [-27.63, 30.21], "title": "Return Pig (Pagoda)", "description": "Robber<br />Use the Color Gun to turn this bell to gold. This is one of the 3 required to unlock Shui Xue. The correct color can be acquired at the Electronics Shop just south of Chan's Limos. Use the Robber disguise to get in, then grab the color from the first Color Swapper to the left. Back at the bell, turn it gold to make a bell mallet appear. Strike the bell, and the pig will jump off the roof (it's a trained professional and will be fine). The cannon is near the southwestern corner of the district, past the pagoda that covers the street that goes over the canal. From that street, go south and it will be on your right."},
             {"coords": [-20.90, 18.26], "title": "Return Pig (Pagoda North)", "description": "No requirements<br />Construction Worker<br />Across the street from this building is a pair of Drill Points. The lower one will reveal parts for a catapult when used. Build the catapult and use it to get to the roof of the building. The closest canon is actually in Bright Lights Plaza, behind the round building west of the traffic circle."},
             {"coords": [37.73, 10.39], "title": "Return Pig (Crescent Park", "description": "No requirements<br />Go to the eastern edge of the wall on the north end of the park. Climb up the handles, then walk across the tight-rope. Use the Chicken Glide point to get to the next tower, then use the tight-rope there to get to another Chicken Glide point. Use it to get across the gap and grab onto the handles. Climb up, then tight-rope walk across the gap to the pig. The cannon is south of here, just behind the docks."}
-       ]
-   },
+        ]
+    },
     "coffee-break": {
         "title": {"en": "Coffee Break", "nl": "Koffie Pauze"},
         "markers": [
@@ -220,8 +219,8 @@
             {"coords": [-37.28, 44.11], "title": "Coffee Break (Grand Canal)", "description": "Enter the canal from Pagoda. Keep to the right at the fork. It will be on your left."},
             {"coords": [-20.32, 14.31], "title": "Coffee Break (Bright Lights Plaza)", "description": "South of the toy store, look for an orange phone. There is a ladder right next to it leading to the Coffee Break."},
             {"coords": [-35.90, 21.73], "title": "Coffee Break (Pagoda)", "description": "No requirements<br />Climb the Chan's Limo sign. This route follows the first part of the Free Run that also starts at the base of the sign. Once you slide down the rope and cross the street, climb the ladder in front of you go to the left. Vault over the short wall, but stop at the edge of the fence. Turn south, and then almost immediately turn to the right. The Coffee Break is inside this fenced area."}
-       ]
-   },
+        ]
+    },
     "time-trial": {
         "title": {"en": "Time Trial", "nl": "Tijdrace"},
         "markers": [
@@ -331,7 +330,7 @@
             {"coords": [-60.79, -41.78], "title": {"en": "Call-in Point", "nl": "Voertuigbestelpunt"}, "description": "8 000"},
             {"coords": [-63.24, -34.80], "title": {"en": "Wishing Fountain", "nl": "Wensfontijn"}, "description": "15 000"},
             {"coords": [-45.96, -39.54], "title": {"en": "Crash mat", "nl": "Noodmat"}, "description": "10 000"},
-            {"coords": [-45.60, -36.82], "title": {"en": "House", "nl": "Huis op de heuvel", "description": "30 000"}},
+            {"coords": [-45.60, -36.82], "title": {"en": "House", "nl": "Huis op de heuvel"}, "description": "30 000"},
             {"coords": [-43.07, -39.08], "title": {"en": "Call-in Point", "nl": "Voertuigbestelpunt"}, "description": "8 000"},
             {"coords": [-40.94, -45.77], "title": {"en": "Sky glide", "nl": "Kabelbaan"}, "description": "12 000"},
             {"coords": [-40.12, -37.77], "title": {"en": "Stunt Ramp", "nl": "Stuntschans"}, "description": "10 000"},
@@ -368,8 +367,8 @@
             {"coords": [62.04, -53.26]},
             {"coords": [-43.11, -44.99]},
             {"coords": [62.00, -56.45]}
-       ]
-   },
+        ]
+    },
     "vehicle-theft": {
         "title": {"en": "Vehicle Theft", "nl": "Autodief"},
         "markers": [
@@ -382,8 +381,8 @@
             {"coords": [-38.75, 20.47]},
             {"coords": [18.09, 63.51]},
             {"coords": [1.40, 11.47]}
-       ]
-   },
+        ]
+    },
     "car-jack": {
         "title": {"en": "Car Jack", "nl": "Autodiefstal"},
         "markers": [
@@ -400,13 +399,10 @@
             {"coords": [-42.74, 75.02]},
             {"coords": [-39.14, 27.06]},
             {"coords": [-8.91, 16.01]}
-       ]
-   },
+        ]
+    },
     "gang": {
-        "title": {
-            "en": "Gang",
-            "nl": "Bende"
-       },
+        "title": {"en": "Gang", "nl": "Bende"},
         "markers": [
             {"coords": [-54.93, 25.45], "description": "From the roof of the large bank building, use the Chicken Glide activity to glide to the chicken float. Procede along tighropes to the front of the aligator float."},
             {"coords": [-52.03, 60.00]},
@@ -423,13 +419,10 @@
             {"coords": [-35.89, 72.04]},
             {"coords": [-39.02, 17.97]},
             {"coords": [-17.89, 23.11]}
-       ]
-   },
+        ]
+    },
     "atm": {
-        "title": {
-            "en": "ATM",
-            "nl": "Geldautomaat"
-       },
+        "title": {"en": "ATM", "nl": "Geldautomaat"},
         "markers": [
             {"coords": [-46.88, 38.96]},
             {"coords": [-52.35, 34.60]},
@@ -448,8 +441,8 @@
             {"coords": [-20.71, 27.68]},
             {"coords": [-16.59, 18.34]},
             {"coords": [-6.55, 22.22]}
-       ]
-   },
+        ]
+    },
     "train-station": {
         "title": {"en": "Train Station", "nl": "Treinstation"},
         "markers": [
@@ -467,8 +460,8 @@
             {"coords": [-25.86, 71.55], "title": "Fresco"},
             {"coords": [-4.66, 14.25], "title": "Bright Light Plaza"},
             {"coords": [-69.16, 48.92], "title": "Downtown"}
-       ]
-   },
+        ]
+    },
     "disguise-booth": {
         "title": {"en": "Disguise Booth", "nl": "Verkleedhokje"},
         "markers": [
@@ -488,41 +481,41 @@
             {"coords": [12.67, 21.58]},
             {"coords": [-33.53, 70.21]},
             {"coords": [-19.12, 18.62]}
-       ]
-   },
+        ]
+    },
     "challenge-entrance": {
         "title": {"en": "Challenge Entrance", "nl": "Ingang Uitdaging"},
         "markers": [
-            {"coords": [50.78, 12.22], "title": {"nl": "Uptown-museum"}},
-            {"coords": [62.74, -37.64], "title": {"nl": "Geheime basis"}, "description": "<a href=\"?tiles=secret_base\">secret_base</a>"},
-            {"coords": [53.25, -33.50], "title": {"nl": "Barry Smids dojo"}, "description": "<a href=\"?tiles=dojo_temple\">dojo_temple</a>"},
-            {"coords": [62.295291808543304, -55.81686091500001], "title": {"en": "Bluebell Mine", "nl": "Bluebell-mijn"}, "description": "<a href=\"?tiles=miner_altercation\">miner_altercation</a>"},
-            {"coords": [-62.55, 142.17], "title": {"nl": "Blackwells maanbasis"}},
-            {"coords": [-60.71, 151.73], "title": {"nl": "Apollo-eiland-ruimtevaartcentrum"}},
-            {"coords": [-71.06, 2.86], "title": {"nl": "Albatros-gevangenis"}},
-            {"coords": [-51.51, -20.77], "title": {"nl": "De daken"}},
-            {"coords": [-3.49, 57.07], "title": {"nl": "Bouwplaats"}},
-            {"coords": [-5.57, 71.00], "title": {"nl": "Blackwells landhuis: inbraak"}},
-            {"coords": [-11.52, 69.40], "title": {"nl": "Blackwells landhuis: Onderzoek"}},
-            {"coords": [-38.70, 31.08], "title": {"nl": "Chans sloperij"}},
-            {"coords": [-50.17, 18.39], "title": {"nl": "LEGO City-brandweer"}},
-            {"coords": [-65.46, 43.83], "title": {"nl": "LEGO City-bank"}}
-       ]
-   },
+            {"coords": [50.78, 12.22], "title": {"en": "Uptown-museum", "nl": "Uptown-museum"}},
+            {"coords": [62.74, -37.64], "title": {"en": "Secret base", "nl": "Geheime basis"}, "description": "<a href=\"?tiles=secret_base\">secret_base</a>"},
+            {"coords": [53.25, -33.50], "title": {"en": "Barry Smith dojo", "nl": "Barry Smids dojo"}, "description": "<a href=\"?tiles=dojo_temple\">dojo_temple</a>"},
+            {"coords": [62.30, -55.82], "title": {"en": "Bluebell Mine", "nl": "Bluebell-mijn"}, "description": "<a href=\"?tiles=miner_altercation\">miner_altercation</a>"},
+            {"coords": [-62.55, 142.17], "title": {"en": "Blackwells moon base", "nl": "Blackwells maanbasis"}},
+            {"coords": [-60.71, 151.73], "title": {"en": "Apollo-island-spacecenter", "nl": "Apollo-eiland-ruimtevaartcentrum"}},
+            {"coords": [-71.06, 2.86], "title": {"en": "Albatros-prison", "nl": "Albatros-gevangenis"}},
+            {"coords": [-51.51, -20.77], "title": {"en": "The rooftops", "nl": "De daken"}},
+            {"coords": [-3.49, 57.07], "title": {"en": "Constructionyard", "nl": "Bouwplaats"}},
+            {"coords": [-5.57, 71.00], "title": {"en": "Blackwells mansion: burglary", "nl": "Blackwells landhuis: inbraak"}},
+            {"coords": [-11.52, 69.40], "title": {"en": "Blackwells mansion: Investigation", "nl": "Blackwells landhuis: Onderzoek"}},
+            {"coords": [-38.70, 31.08], "title": {"en": "Chans demolition yard", "nl": "Chans sloperij"}},
+            {"coords": [-50.17, 18.39], "title": {"en": "LEGO City-firebrigade", "nl": "LEGO City-brandweer"}},
+            {"coords": [-65.46, 43.83], "title": "LEGO City-bank"}
+        ]
+    },
     "helicopter-platform": {
         "title": {"en": "Helicopter Platform", "nl": "Helikopterplatform"},
         "markers": [
-            {"coords": [-60.09, -43.36], "description:": "Unlocks the Responder."},
+            {"coords": [-60.09, -43.36], "description": "Unlocks the Responder."},
             {"coords": [-9.96, 75.22]},
             {"coords": [-4.00, 18.40]},
-            {"coords": [54.94, -47.94], "description:": "Unlocks the Skybringer."},
+            {"coords": [54.94, -47.94], "description": "Unlocks the Skybringer."},
             {"coords": [52.57, 39.43], "description": "Unlocks the Camel."},
             {"coords": [-35.10, -38.91], "description": "Unlocks the Hera."},
             {"coords": [-58.93, 20.46], "description": "Unlocks the Swooper."},
             {"coords": [-62.55, 150.62], "description": "Unlocks the UFO."},
             {"coords": [-71.65, 0.23], "description": "Unlocks the Chopper."}
-       ]
-   },
+        ]
+    },
     "crash-mat": {
         "title": {"en": "Crash mat", "nl": "Noodlandingsmat"},
         "markers": [
@@ -534,8 +527,8 @@
             {"coords": [-53.86, 52.07]},
             {"coords": [-36.34, 28.17]},
             {"coords": [29.11, -59.42]}
-       ]
-   },
+        ]
+    },
     "fire-extinguished": {
         "title": {"en": "Fire Extinguished", "nl": "Barbecue"},
         "markers": [
@@ -556,24 +549,24 @@
             {"coords": [-36.84, 29.20]},
             {"coords": [19.28, 60.25]},
             {"coords": [-4.28, 19.44]}
-       ]
-   },
+        ]
+    },
     "color-swapper": {
         "title": {"en": "Color Swapper", "nl": "Kleurwisselaar"},
         "markers": [
-            {"coords": [56.68, 0.65], "title": {"nl": "kleurenwisselstation"}},
+            {"coords": [56.68, 0.65], "title": {"en": "colorswapstation", "nl": "kleurenwisselstation"}},
             {"coords": [56.28, 0.79]},
             {"coords": [-60.35, -42.67], "description": "blue"},
             {"coords": [-55.97, -20.28], "description": "green"},
             {"coords": [-39.40, -36.21], "description": "green"},
             {"coords": [-34.59, -33.58], "description": "yellow and red"}
-       ]
-   },
+        ]
+    },
     "character-token": {
         "title": {"en": "Character Token", "nl": "Kostuum"},
         "markers": [
-            {"coords": [-49.15, 53.96], "tiles": "dojo_temple", "title": {"nl": "Barry Smid", "en": "Barry Smith"}},
-            {"coords": [-80.7, 65.04], "tiles": "secret_base", "title": {"nl": "Onderzeeboot Kapitein", "en": "Submarine Captain"}},
+            {"coords": [-49.15, 53.96], "tiles": "dojo_temple", "title": {"en": "Barry Smith", "nl": "Barry Smid"}},
+            {"coords": [-80.70, 65.04], "tiles": "secret_base", "title": {"en": "Submarine Captain", "nl": "Onderzeeboot Kapitein"}},
             {"coords": [48.94, -24.01], "tiles": "secret_base", "title": "Henrik Kowalski (no map)"},
             {"coords": [-60.13, -19.99], "title": "Frank Honey (Police)", "description": "Super Build"},
             {"coords": [-10.03, -18.88], "title": "Ellie Phillips (Police)"},
@@ -582,7 +575,7 @@
             {"coords": [-39.57, 27.14], "title": "Clutch (Police)", "description": "on the small building"},
             {"coords": [-58.64, 54.64], "title": "Dr. Whatsit (Police)", "description": "paint the LEGO brick statue red, yellow and blue"},
             {"coords": [56.41, -47.08], "title": "Ranger Barber (Police)", "description": "disguise booth"},
-            {"coords": [-64.74, 43.90], "title": "Traffic Cop (Police)", "decription": "Follow the blue numbers on the map above to paint three traffic lights yellow"},
+            {"coords": [-64.74, 43.90], "title": "Traffic Cop (Police)", "description": "Follow the blue numbers on the map above to paint three traffic lights yellow"},
             {"coords": [-2.91, 63.59], "title": "Frank Poolside (Police)"},
             {"coords": [33.91, -65.61], "title": "Bea Heckerson (Police)", "description": "destroy and rebuild on scarecrows three yellow boxes (b)"},
             {"coords": [41.87, -63.19], "title": "Bea Heckerson (Police)", "description": "destroy and rebuild on scarecrows three yellow boxes (c)"},
@@ -608,11 +601,9 @@
             {"coords": [-62.41, -44.48], "title": {"en": "Security Guard (Police)", "nl": "Bewaker (Politie)"}},
             {"coords": [48.63, 32.33], "title": "Officer Park (Police)"},
             {"coords": [-22.19, -42.45], "title": "Clown Robber Max (Robber)"},
-            {"coords": [-44.57, 63.03], "title": "Forrest Blackwell Tuxedo", "description": "Get on the white building."
-           },
+            {"coords": [-44.57, 63.03], "title": "Forrest Blackwell Tuxedo", "description": "Get on the white building."},
             {"coords": [-14.16, 20.13], "title": "James Curry", "description": "Build a trampoline from the debris of a smashable pay phone in front of the shopping mall to reach some handholds on the roof"},
-            {"coords": [-9.35, 16.94], "title": "Eddie JoJo (Robber)", "description": "paint three ice cream carts pink in city center."
-           },
+            {"coords": [-9.35, 16.94], "title": "Eddie JoJo (Robber)", "description": "paint three ice cream carts pink in city center."},
             {"coords": [-36.25, 68.99], "title": "Salvatore Calzone (Robber)"},
             {"coords": [-36.25, 68.99], "title": "Paulie Blindfolds (Robber)"},
             {"coords": [-37.82, 28.52], "title": "Feng (Robber)", "description": "paint yellow three lamps around the pagoda"},
@@ -625,7 +616,7 @@
             {"coords": [-28.93, -35.10], "title": "Hot Tub McCreedy (Robber)", "description": "color red four buoyas on the water from the beach."},
             {"coords": [46.59, 29.21], "title": "Clown Robber Wes (Robber)", "description": "paint flowers in front of the building in colours red, yellow and pink."},
             {"coords": [-17.09, 73.54], "title": "Tim Welch (Robber)", "description": "using the helicopter get here and go around the fence, get inside and go by fence from the southern side - you'll see a place, when you can again climb over to find a token."},
-            {"coords": [-41.77, 60.47], "title": "Spikey Don (Robber)", "tiles": "miner_altercation"},
+            {"coords": [-41.77, 60.47], "tiles": "miner_altercation", "title": "Spikey Don (Robber)"},
             {"coords": [-31.06, 71.35], "title": "Vinnie Tracksuit (Robber)", "description": "Paint balls brown and pink - on the roof Vinnie Tracksuit token will appear."},
             {"coords": [-31.06, 71.35], "title": "Carlo Jerome (Robber)", "description": "Bring here three balls and put them into a cup."},
             {"coords": [-24.23, 66.57], "title": "Carlo Jerome (Robber) / Vinnie Tracksuit (Robber)", "description": "Ball"},
@@ -658,8 +649,7 @@
             {"coords": [61.91, -39.78], "title": "Todd Graywacke (Miner)", "description": "above the hill, you mus use jetpack to grab it."},
             {"coords": [24.26, 12.15], "title": "Otto Hornfels (Miner)", "description": "paint yellow four cones in the tunnel"},
             {"coords": [38.81, -68.31], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm)"},
-            {"coords": [31.56, -64.27], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (a)"
-           },
+            {"coords": [31.56, -64.27], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (a)"},
             {"coords": [39.30, -72.40], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (b)"},
             {"coords": [45.47, -72.38], "title": "Stinky Fletcher (Miner)", "description": "paint yellow 3 cubic boxes (color changer is on the farm) (c)"},
             {"coords": [57.54, -50.28], "title": "Ben Moseley (Miner)", "description": "fishing rod"},
@@ -749,8 +739,7 @@
             {"coords": [-30.17, -40.30], "title": "Deborah Graham (Civilian)", "description": "token behind the liquid container."},
             {"coords": [-72.69, 1.89], "title": "Tribal Hunter (Special 1)", "description": "destroy 3 paletes and rebuild them to castles in the beach around the island (b)"},
             {"coords": [-72.48, 8.06], "title": "Tribal Hunter (Special 1)", "description": "destroy 3 paletes and rebuild them to castles in the beach around the island (a)"},
-            {"coords": [-70.25, -0.18], "title": "Tribal Hunter (Special 1)", "description": "destroy 3 paletes and rebuild them to castles in the beach around the island (c)"
-           },
+            {"coords": [-70.25, -0.18], "title": "Tribal Hunter (Special 1)", "description": "destroy 3 paletes and rebuild them to castles in the beach around the island (c)"},
             {"coords": [-69.41, 9.10], "title": "Tribal Hunter (Special 1)", "description": "destroy 3 paletes and rebuild them to castles in the beach around the island"},
             {"coords": [-10.85, 18.05], "title": "Zombie (Special 1)", "description": "climb on top of the building"},
             {"coords": [-11.21, 13.68], "title": "Magician (Special 1)", "description": "use teleport above the building to get in here."},
@@ -899,16 +888,16 @@
             {"coords": [-54.03, 59.21], "title": "Wii U: Farmer Bales, All others: Ezra Baxter", "description": "Head to the roof of City Hall and look behind the Rex statue."},
             {"coords": [-62.30, 56.56], "title": "Wii U: Jo Chalkley, All others: Lauren Colclough", "description": "Follow the sidewalks to the northeast. Go behind the buildings until you see a green cannon to the north. Token is behind the cannon."},
             {"coords": [-10.85, 18.05], "title": "Chris Wyatt", "description": "climb on top of the building"}
-       ]
-   },
+        ]
+    },
     "vehicle-token": {
-        "title": {"nl": "Voertuig"},
+        "title": {"en": "Vehicle", "nl": "Voertuig"},
         "markers": [
-            {"coords": [-47.49, 121.57], "title": "Hairdryer", "tiles": "dojo_temple"},
-            {"coords": [-2.46, -104.77], "title": "Roar", "tiles": "dojo_temple"},
-            {"coords": [61.86, 89.12], "title": "Rex's brute", "tiles": "secret_base"},
-            {"coords": [73.12, 22.15], "title": "Steadfast", "tiles": "miner_altercation"},
-            {"coords": [-50.4, 121.46], "title": "Dumper", "tiles": "miner_altercation"},
+            {"coords": [-47.49, 121.57], "tiles": "dojo_temple", "title": "Hairdryer"},
+            {"coords": [-2.46, -104.77], "tiles": "dojo_temple", "title": "Roar"},
+            {"coords": [61.86, 89.12], "tiles": "secret_base", "title": "Rex's brute"},
+            {"coords": [73.12, 22.15], "tiles": "miner_altercation", "title": "Steadfast"},
+            {"coords": [-50.40, 121.46], "tiles": "miner_altercation", "title": "Dumper"},
             {"coords": [-66.53, 38.29], "title": "Bearer", "description": "Chase"},
             {"coords": [29.48, -59.34], "title": "Slicker"},
             {"coords": [45.64, -51.55], "title": "Torsion"},
@@ -975,8 +964,8 @@
             {"coords": [0.70, 61.79], "title": "Spirit", "description": "in the cave"},
             {"coords": [8.81, 44.01], "title": "Rex's Galician"},
             {"coords": [-57.45, 64.40], "title": "Bristler"}
-       ]
-   },
+        ]
+    },
     "helicopter-token": {
         "title": {"en": "Helicopter Token", "nl": "Helikopter"},
         "markers": [
@@ -987,9 +976,9 @@
             {"coords": [-71.65, 0.23], "title": "Chopper"},
             {"coords": [-60.04, -43.64], "title": "Responder"},
             {"coords": [-35.10, -38.91], "title": "Hera"},
-            {"coords": [46.44, 57.3], "tiles": "secret_base", "title": "Jupiter"}
-       ]
-   },
+            {"coords": [46.44, 57.30], "tiles": "secret_base", "title": "Jupiter"}
+        ]
+    },
     "ferry": {
         "title": {"en": "Ferry", "nl": "Veerdienstroute"},
         "markers": [
@@ -997,8 +986,8 @@
             {"coords": [28.89, 13.19]},
             {"coords": [-69.34, 8.89]},
             {"coords": [-63.20, -46.62], "title": "Cherry Tree Hills"}
-       ]
-   },
+        ]
+    },
     "call-in-point": {
         "title": {"en": "Call in Point", "nl": "Voertuigbestelpunt"},
         "markers": [
@@ -1016,29 +1005,29 @@
             {"coords": [-43.07, -39.08]},
             {"coords": [-2.47, 22.56]},
             {"coords": [-21.96, 69.34]}
-       ]
-   },
+        ]
+    },
     "police-shield-fragment": {
         "title": {"en": "Police Shield Fragment", "nl": "Politieschildfragment"},
         "markers": [
             {"coords": [29.16, 94.25], "tiles": "dojo_temple", "title": "paint statue"},
             {"coords": [28.86, 81.24], "tiles": "dojo_temple", "title": "paint statue"},
-            {"coords": [-52.7, 82.09], "tiles": "dojo_temple", "title": "paint statue"},
-            {"coords": [-52.7, 92.64], "tiles": "dojo_temple", "title": "paint statue"},
+            {"coords": [-52.70, 82.09], "tiles": "dojo_temple", "title": "paint statue"},
+            {"coords": [-52.70, 92.64], "tiles": "dojo_temple", "title": "paint statue"},
             {"coords": [26.12, 59.94], "tiles": "dojo_temple", "title": "water flowers"},
             {"coords": [-42.42, 61.35], "tiles": "dojo_temple", "title": "water flowers"},
             {"coords": [-42.81, 72.42], "tiles": "dojo_temple", "title": "water flowers"},
             {"coords": [-42.29, 101.25], "tiles": "dojo_temple", "title": "water flowers"},
             {"coords": [-42.42, 112.32], "tiles": "dojo_temple", "title": "water flowers"},
-            {"coords": [23.4, 116.37], "tiles": "dojo_temple", "title": "water flowers"},
+            {"coords": [23.40, 116.37], "tiles": "dojo_temple", "title": "water flowers"},
             {"coords": [-21.78, -69.61], "tiles": "dojo_temple", "title": "lantern", "description": "use hookshot"},
-            {"coords": [-21.94, -77.7], "tiles": "dojo_temple", "title": "lantern", "description": "use hookshot"},
+            {"coords": [-21.94, -77.70], "tiles": "dojo_temple", "title": "lantern", "description": "use hookshot"},
             {"coords": [-21.45, -92.99], "tiles": "dojo_temple", "title": "lantern", "description": "use hookshot"},
             {"coords": [-22.11, -97.21], "tiles": "dojo_temple", "title": "lantern", "description": "use hookshot"},
             {"coords": [-9.97, -114.26], "tiles": "dojo_temple", "title": "lantern", "description": "use hookshot"},
             {"coords": [-10.83, -63.28], "tiles": "dojo_temple", "title": "hat stand"},
             {"coords": [-11.18, -106.17], "tiles": "dojo_temple", "title": "hat stand"},
-            {"coords": [-39.5, -70.49], "tiles": "dojo_temple", "title": "hat stand"},
+            {"coords": [-39.50, -70.49], "tiles": "dojo_temple", "title": "hat stand"},
             {"coords": [65.07, -137.11], "tiles": "secret_base", "title": "rex fury crate (1/3)"},
             {"coords": [48.94, -24.01], "tiles": "secret_base", "title": "rex fury crate (2/3) (no map)"},
             {"coords": [48.94, -24.01], "tiles": "secret_base", "title": "rex fury crate (3/3) (no map)"},
@@ -1047,11 +1036,11 @@
             {"coords": [-63.71, -15.59], "tiles": "secret_base", "title": "locker"},
             {"coords": [-79.97, -26.84], "tiles": "secret_base", "title": "locker"},
             {"coords": [-73.61, 59.77], "tiles": "secret_base", "title": "locker"},
-            {"coords": [-73.48, -35.1], "tiles": "secret_base", "title": "flowers"},
+            {"coords": [-73.48, -35.10], "tiles": "secret_base", "title": "flowers"},
             {"coords": [-77.62, -32.99], "tiles": "secret_base", "title": "flowers"},
             {"coords": [-81.26, -43.19], "tiles": "secret_base", "title": "flowers"},
             {"coords": [-73.71, 62.93], "tiles": "secret_base", "title": "flowers"},
             {"coords": [28.56, 75.92]}
-       ]
-   }
+        ]
+    }
 }
