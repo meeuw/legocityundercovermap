@@ -240,8 +240,8 @@
             {"coords": [-3.23, 70.91], "title": "Time Trial (Paradise Sands)", "description": "This Time Trial is hidden until you get close enough to it. This is a boat time trial, featuring the Surger. Ends inside the loop in the Orion roller coaster up north. Unlocks: Galleon (Heavy)"},
             {"coords": [-42.18, 75.39], "title": "Time Trial (Fresco)", "description": "This is a boat time trial, featuring the Catalufa. Ends on (yes, *on*) the dock that you start next to. Unlocks: Squadmobile (Emergency)"},
             {"coords": [17.25, -56.61], "title": "Time Trial (Auburn Bay Bridge)", "description": "Starts and ends at the north side of the Auburn Bay Bridge. Unlocks: Wrath (Performance)"}
-       ]
-   },
+        ]
+    },
     "free-run": {
         "title": {"en": "Free Run", "nl": "Freerun parcours"},
         "markers": [
@@ -264,8 +264,8 @@
             {"coords": [-33.20, 24.07], "title":"Free Run (Pagoda)", "description": "Unlocks after completing Chapter 5 - Undercover.<br /> The token is on the ground, underneath the sign for Chan's Limo service. Unlocks Disguised Natalia (Resident)."},
             {"coords": [-58.63, -36.74], "title":"Free Run (Cherry Tree Hills)", "description": "No requirements<br />Look for the doughnut shop on the southwest corner of this block. Take the stairs on the south side of the building, climb up the wall, then grapple onto the roof. Go to the left and find a Tight Rope. This is where the course starts once unlocked. To unlock it, proceed through the remainder of the course, which is marked by a nearly contiguous line of studs. After rudely crashing an in-progress game of tennis, climb over the fence to the north, slide under the vent, and look for the token next to the catapult. Unlocks Baseball Player (Special 1)."},
             {"coords": [-10.78, 19.12], "title":"Free Run (Bright Lights Plaza)", "description": "Jetpack<br />The token to unlock this Free Run is located at the top of a gigantic sign advertising 'Marvo' on the north end of this set of buildings. Go to the Lego Store next to this icon. On the south side, look for a ladder partially up the wall. Use the jetpack to get to it. Climb it, then continue to the right around the front of the store. Climb the wall, then continue left back around the store again. Climb the wall on the left side, then continue back to the right, vaulting the obstacles in the way. Toward the right end, you'll see a blue plate that you have to balance on. Take it to the right and slide down the tightrope. Climb the Romeo and Juliet sign, then wall-run to the left. Climb the wall, then go to the right. Climb this wall to find the token. Unlocks Cheerleader (Special 1)."}
-       ]
-   },
+        ]
+    },
     "district-conquered": {
         "title": {"en": "District Conquered", "nl": "Vlag"},
         "markers": [
@@ -289,8 +289,8 @@
             {"coords": [-36.28, 26.51], "title": "District Conquered (Pagoda)", "description": ""},
             {"coords": [51.02, 41.64], "title": "District Conquered (Lego City Airport)", "description": ""},
             {"coords": [55.06, -12.24], "title": "District Conquered (Blackwell Bridge)", "description": ""}
-       ]
-   },
+        ]
+    },
     "super-build": {
         "title": {"en": "Super Build", "nl": "Superbouwsel"},
         "markers": [
@@ -354,8 +354,8 @@
             {"coords": [-12.47, -20.89], "title": {"en": "Ferry", "nl": "Veerboot"}, "description": "15 000"},
             {"coords": [39.99, 80.93], "title": {"en": "Bluffbeard's Lighthouse", "nl": "Vuurtoren van Bluffbeard"}, "description": "50 000"},
             {"coords": [50.74, 42.21], "title": "LCX Control Tower", "description": ""}
-       ]
-   },
+        ]
+    },
     "super-brick": {
         "title": {"en": "Super Brick", "nl": "Supersteen"},
         "markers": [
