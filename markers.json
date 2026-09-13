@@ -354,8 +354,8 @@
             {"coords": [-12.47, -20.89], "title": {"en": "Ferry", "nl": "Veerboot"}, "description": "15 000"},
             {"coords": [39.99, 80.93], "title": {"en": "Bluffbeard's Lighthouse", "nl": "Vuurtoren van Bluffbeard"}, "description": "50 000"},
             {"coords": [50.74, 42.21], "title": "LCX Control Tower", "description": ""}
-       ]
-   },
+        ]
+    },
     "super-brick": {
         "title": {"en": "Super Brick", "nl": "Supersteen"},
         "markers": [
