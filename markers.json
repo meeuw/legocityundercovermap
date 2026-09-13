@@ -240,8 +240,8 @@
             {"coords": [-3.23, 70.91], "title": "Time Trial (Paradise Sands)", "description": "This Time Trial is hidden until you get close enough to it. This is a boat time trial, featuring the Surger. Ends inside the loop in the Orion roller coaster up north. Unlocks: Galleon (Heavy)"},
             {"coords": [-42.18, 75.39], "title": "Time Trial (Fresco)", "description": "This is a boat time trial, featuring the Catalufa. Ends on (yes, *on*) the dock that you start next to. Unlocks: Squadmobile (Emergency)"},
             {"coords": [17.25, -56.61], "title": "Time Trial (Auburn Bay Bridge)", "description": "Starts and ends at the north side of the Auburn Bay Bridge. Unlocks: Wrath (Performance)"}
-       ]
-   },
+        ]
+    },
     "free-run": {
         "title": {"en": "Free Run", "nl": "Freerun parcours"},
         "markers": [
