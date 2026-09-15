@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LEGO City Undercover Interactive Map</title>
         <meta name="google-site-verification" content="kI7YRipDOHdpbQRmalk9-9oX0qcrIFSMxyqD2N1OTOY" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.2/gh-fork-ribbon.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
            integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -51,10 +52,37 @@
             }
             function onload() {
                 var params = (new URL(document.location)).searchParams;
+                var browserLangs = navigator.languages
                 language = params.get('language');
+                // If the user has not selected a language in Leaflet...
                 if (!language) {
+                    for (lang of browserLangs) {
+                        var userLang = lang.split('-')[0];
+                        // If the user's System Language is English...
+                        if (userLang == 'en') {
+                             language = 'en';
+                        }
+                        // If the user's System Language is Dutch...
+                        if (userLang == 'nl') {
+                             language = 'nl';
+                        }
+                    }
+                // Otherwise, default to Dutch.
+                } else {
                     language = 'nl';
                 }
+
+                // // If the user has English as their system language, use English.
+                // if (browserLangs[0].split('-')[0] == "en" && !language){
+                //     language = 'en';
+                // }
+                // // If the user has Dutch as their system language, use Dutch.
+                // else if (browserLangs[0].split('-')[0] == "nl" && !language) {
+                //     language = 'nl';
+                // } // If the user has no system language and hasn't chosen one in Leaflet, use Dutch.
+                // else if (!browserLangs && !language) {
+                //     language = 'nl';
+                // } // Otherwise, use the Leaflet setting.
                 debug = params.get('debug');
                 if (!debug) {
                     debug = 0;
@@ -89,18 +117,18 @@
                             .openOn(mymap);
                     });
                 }
-                fetch('markers.json').then(function(response) {
+                fetch('markers.json?v=' + Date.now()).then(function(response) {
                     response.json().then(function(markers) {
                         initialize(mymap, markers);
                     });
-                }); 
+                });
             }
             function initialize(mymap, markers) {
                 var completed = JSON.parse(localStorage.getItem("completed"));
                 if (!completed) completed = {};
                 for (marker_type in markers) {
                     var icon = L.icon({iconUrl: 'icons/'+marker_type+'.png', iconSize: [32, 32]});
-                    // marker_type defauls
+                    // marker_type defaults
                     markers[marker_type].visibility = "visible";
                     for (marker_i in markers[marker_type]["markers"]) {
                         var marker = markers[marker_type]["markers"][marker_i];
@@ -138,7 +166,34 @@
                         }
                         L.DomUtil.create('br', '', container);
                         var description = L.DomUtil.create('div', '', container);
-                        if (marker.description) description.innerHTML = marker.description;
+                        // Add a Prerequisites section if the JSON data contains it (Must be presented in an array, like ["Farmer", "Robber"])
+                        if (marker.prereqs) {
+                            var prereqs = L.DomUtil.create('div', '', container);
+                            prereqs.innerHTML = '<strong>Prerequisites:</strong> ' + marker.prereqs.join(', ');
+                        }
+                        // Adds a Cost section if applicable. Will display commas in the Thousands Separator or Periods, depending on the user's Localization choices.
+                        if (marker.cost) {
+                            var cost = L.DomUtil.create('div', '', container);
+                            cost.innerHTML = '<strong>Cost:</strong> ' + marker.cost.toLocaleString();
+                        }
+                        // Description, unchanged from before
+                        if (marker.description) {
+                            description.innerHTML = marker.description;
+                        }
+                        // Adds an Unlocks section if applicable. I decided not to require arrays here because it usually will just be one thing that gets unlocked.
+                        if (marker.unlocks) {
+                            var unlocks = L.DomUtil.create('div', '', container);
+                            unlocks.innerHTML += '<strong>Unlocks:</strong> ' + marker.unlocks;
+                        }
+                        // If Debug mode is on, this will display the coordinates even if the marker has a title and everything. It's also formatted so you can copy and paste into JSON.
+                        if (debug) {
+                            console.log("Debug is on");
+                            var coords = L.DomUtil.create('div', '', container);
+                            var latlong = markers[marker_type]["markers"][marker_i]["coords"];
+                            var [lat, lng] = latlong;
+                            coords.innerHTML ='"coords": [' + lat +', ' + lng + ']';
+                        }
+
                         L.DomUtil.create('br', '', container);
                         var complete = L.DomUtil.create('a', '', container);
                         complete.href = '#';
@@ -333,13 +388,13 @@
             }
             .legend ul {
                 padding: 0;
-                width: 355px;
+                width: 365px;
                 list-style-type: none;
                 overflow: auto;
                 max-height: calc(100vh - 226px);
             }
             .legend li {
-                width: 170px;
+                width: 180px;
                 float: left;
             }
             li.disabled {
