@@ -81,7 +81,7 @@ for typ in (
     marker_checks = (
         (lambda line: line.startswith('            {"coords": ['), "Line must start with '            {\"coords\": ['"),
         (lambda line: isinstance(get_json(line).get('title'), str | None) or get_json(line)['title'].keys() == {'en', 'nl'}, "Must have both en: and nl: titles"),
-        (lambda line: len(get_json(line).keys() - {'coords', 'title', 'tiles', 'description'}) == 0, "Only coords, title, tiles and description keys are supported"),
+        (lambda line: len(get_json(line).keys() - {'coords', 'title', 'tiles', 'description', 'prereqs', 'cost', 'unlocks'}) == 0, "Only coords, title, tiles, description, prerequisites, cost, and unlock keys are supported"),
         (lambda line: len(get_json(line).get('coords', {})) == 2, "Must have exactly two coords"),
     )
     while check.nextline.endswith(',\n'):
