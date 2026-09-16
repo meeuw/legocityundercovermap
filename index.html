@@ -169,7 +169,8 @@
                         // Add a Prerequisites section if the JSON data contains it (Must be presented in an array, like ["Farmer", "Robber"])
                         if (marker.prereqs) {
                             var prereqs = L.DomUtil.create('div', '', container);
-                            prereqs.innerHTML = '<strong>Prerequisites:</strong> ' + marker.prereqs.join(', ');
+                            var prereqsValue = Array.isArray(marker.prereqs) ? marker.prereqs.join(', ') : marker.prereqs;
+                            prereqs.innerHTML = '<strong>Prerequisites:</strong> ' + prereqsValue;
                         }
                         // Adds a Cost section if applicable. Will display commas in the Thousands Separator or Periods, depending on the user's Localization choices.
                         if (marker.cost) {
