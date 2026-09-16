@@ -71,18 +71,6 @@
                 } else {
                     language = 'nl';
                 }
-
-                // // If the user has English as their system language, use English.
-                // if (browserLangs[0].split('-')[0] == "en" && !language){
-                //     language = 'en';
-                // }
-                // // If the user has Dutch as their system language, use Dutch.
-                // else if (browserLangs[0].split('-')[0] == "nl" && !language) {
-                //     language = 'nl';
-                // } // If the user has no system language and hasn't chosen one in Leaflet, use Dutch.
-                // else if (!browserLangs && !language) {
-                //     language = 'nl';
-                // } // Otherwise, use the Leaflet setting.
                 debug = params.get('debug');
                 if (!debug) {
                     debug = 0;
