@@ -568,14 +568,14 @@
         "title": {"en": "Color Swapper", "nl": "Kleurwisselaar"},
         "markers": [
             {"coords": [56.09, 1.12], "title": {"en": "Color Swapper (Uptown)", "nl": "Kleurwisselaar (Uptown)"}, "prereqs": ["Farmer"], "description": "On the second story of the Art Museum. Provides a swapper for every available color in the game. On the West side are Red, Orange, Yellow, Green, and Blue. On the East side are White, Tan, Black, Pink, and Purple."},
-            {"coords": [-60.35, -42.67], "title": {"en": "Color Swapper (Cherry Tree Hills)", "nl": "Kleurwisselaar (Cherry Tree Hills)"}, "prereqs":["Firefighter"] "description": "On the 2nd floor of the exterior of the Police Station, behind a Firefighter's door. Blue."},
+            {"coords": [-60.35, -42.67], "title": {"en": "Color Swapper (Cherry Tree Hills)", "nl": "Kleurwisselaar (Cherry Tree Hills)"}, "prereqs":["Firefighter"], "description": "On the 2nd floor of the exterior of the Police Station, behind a Firefighter's door. Blue."},
             {"coords": [-55.97, -20.28], "title": {"en": "Color Swapper (Cherry Tree Hills)", "nl": "Kleurwisselaar (Cherry Tree Hills)"}, "description": "Green"},
             {"coords": [-39.40, -36.21], "title": {"en": "Color Swapper (Auburn)", "nl": "Kleurwisselaar (Auburn)"}, "prereqs": ["Firefighter"], "description": "Inside the garage of the B.T.S building. Use the Firefighter door to get in. Red."},
             {"coords": [-27.35, -37.42], "title": {"en": "Color Swapper (Auburn)", "nl": "Kleurwisselaar (Auburn)"}, "description": "Each one is inside a shipping container. Use the Robber to break in. Yellow and Red."},
             {"coords": [42.68, -69.88], "title": {"en": "Color Swapper (Fort Meadows)", "nl": "Kleurwisselaar (Fort Meadows)"}, "description": "Inside Farmer Hayes' barn. Blue and Yellow."},
             {"coords": [42.68, -69.88], "title": {"en": "Color Swapper (Bluebell National Park)", "nl": "Kleurwisselaar (Bluebell National Park)"}, "description": "Inside the north end of the Police Station. Orange."},
             {"coords": [61.70, -55.91], "title": {"en": "Color Swapper (Bluebell National Park)", "nl": "Kleurwisselaar (Bluebell National Park)"}, "description": "Underneath the awning of the building west of the Bluebell Mine entrance. Purple."},
-            {"coords": [59.23, -59.33], "title": {"en": "Color Swapper (Bluebell National Park)", "nl": "Kleurwisselaar (Bluebell National Park)"}, "description": "Inside one of the Power Generation buildings at the base of Bluebell Dam. Requires TNT; the nearest vending machine is near the entrance of Bluebell Mine, next to the Purple color swapper. Blue."},
+            {"coords": [59.23, -59.33], "title": {"en": "Color Swapper (Bluebell National Park)", "nl": "Kleurwisselaar (Bluebell National Park)"}, "description": "Inside one of the Power Generation buildings at the base of Bluebell Dam. Requires TNT; the nearest vending machine is near the entrance of Bluebell Mine, next to the Purple color swapper. Blue."}
         ]
     },
     "character-token": {
