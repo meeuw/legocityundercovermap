@@ -176,12 +176,12 @@
                             var unlocks = L.DomUtil.create('div', '', container);
                             unlocks.innerHTML += '<strong>Unlocks:</strong> ' + marker.unlocks;
                         }
-                        // If Debug mode is on, this will display the coordinates even if the marker has a title and everything. It's also formatted so you can copy and paste into JSON.
+                        // If Debug mode is on, this will display the coordinates even if the marker has a title and everything. It's also formatted so you can copy and paste into JSON. Our JSON requires two decimal places, so I've set these with the toFixed function we used earlier.
                         if (debug) {
-                            console.log("Debug is on");
                             var coords = L.DomUtil.create('div', '', container);
                             var latlong = markers[marker_type]["markers"][marker_i]["coords"];
-                            var [lat, lng] = latlong;
+                            var lat = latlong[0].toFixed(2);
+                            var lng = latlong[1].toFixed(2);
                             coords.innerHTML ='"coords": [' + lat +', ' + lng + ']';
                         }
 
