@@ -1,8 +1,8 @@
 {
   "name": "Lego City Undercover Map",
-  "short_name": "Lego Map",
+  "short_name": "LCU Map",
   "description": "LEGO City Undercover Map",
-  "start_url": "/legocityundercovermap/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
