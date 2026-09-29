@@ -358,7 +358,8 @@
             {"coords": [-46.80, 27.82], "title": "The Deep Sea Spin", "cost":50000, "description": "", "unlocks":""},
             {"coords": [59.19, -33.77], "title": "Serenity Bridge", "cost":30000, "description": "Built during Chapter 4 - When the Going Gets Tough. Enables access to Barry Smith's Dojo, and access to the character token for Karate Guy (Resident) towards the center of the bridge.", "unlocks":""},
             {"coords": [-62.61, 142.14], "title": "Space Shuttle", "cost":50000, "description": "Built during Chapter 15 - Far Above the Call of Duty.", "unlocks":"Spaceman (Special 1)"},
-            {"coords": [14.26, 64.01], "title": "Paradise Pool", "cost":30000, "description": "Built during Chapter 11 - The Proof of the Pudding is in the Meeting.", "unlocks":"Talos (Compact)"}
+            {"coords": [14.26, 64.01], "title": "Paradise Pool", "cost":30000, "description": "Built during Chapter 11 - The Proof of the Pudding is in the Meeting.", "unlocks":"Talos (Compact)"},
+            {"coords": [47.49, 14.61], "title": {"en": "Color Swapper (Uptown)", "nl": "Kleurwisselaar (Uptown)"}, "description": "Between these buildings in the alleyway, on the north side. Gold."},
         ]
     },
     "super-brick": {
