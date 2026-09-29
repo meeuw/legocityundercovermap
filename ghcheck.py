@@ -3,6 +3,7 @@ import fileinput
 import json
 import functools
 import sys
+import re
 
 class checkr:
     def __init__(self, f):
@@ -83,6 +84,7 @@ for typ in (
         (lambda line: isinstance(get_json(line).get('title'), str | None) or get_json(line)['title'].keys() == {'en', 'nl'}, "Must have both en: and nl: titles"),
         (lambda line: len(get_json(line).keys() - {'coords', 'title', 'tiles', 'description', 'prereqs', 'cost', 'unlocks'}) == 0, "Only coords, title, tiles, description, prerequisites, cost, and unlock keys are supported"),
         (lambda line: len(get_json(line).get('coords', {})) == 2, "Must have exactly two coords"),
+        (lambda line: re.search(r':[^ ]', line) == None , "A colon is always followed by a space"),
     )
     while check.nextline.endswith(',\n'):
         check(
